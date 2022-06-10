@@ -9,6 +9,12 @@
     <message name="helloResponse"/>
     <message name="euroAdolar"/>
     <message name="euroAdolarResponse"/>
+    <message name="validarUsuario"/>
+    <message name="validarUsuarioResponse"/>
+    <message name="Operacion"/>
+    <message name="OperacionResponse"/>
+    <message name="Formulas"/>
+    <message name="FormulasResponse"/>
     <portType name="ConversionSw">
         <operation name="hello">
             <input message="tns:hello"/>
@@ -17,6 +23,18 @@
         <operation name="euroAdolar">
             <input message="tns:euroAdolar"/>
             <output message="tns:euroAdolarResponse"/>
+        </operation>
+        <operation name="validarUsuario">
+            <input message="tns:validarUsuario"/>
+            <output message="tns:validarUsuarioResponse"/>
+        </operation>
+        <operation name="Operacion">
+            <input message="tns:Operacion"/>
+            <output message="tns:OperacionResponse"/>
+        </operation>
+        <operation name="Formulas">
+            <input message="tns:Formulas"/>
+            <output message="tns:FormulasResponse"/>
         </operation>
     </portType>
     <binding name="ConversionSwPortBinding" type="tns:ConversionSw">
@@ -27,6 +45,18 @@
         <operation name="euroAdolar">
             <input></input>
             <output></output>
+        </operation>
+        <operation name="validarUsuario">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="Operacion">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="Formulas">
+            <input/>
+            <output/>
         </operation>
     </binding>
     <service name="ConversionSw">
