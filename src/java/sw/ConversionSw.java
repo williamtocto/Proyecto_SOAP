@@ -22,7 +22,9 @@ public class ConversionSw {
      */
     @WebMethod(operationName = "hello")
     public String hello(@WebParam(name = "name") String txt) {
+              System.out.println("fwefasfes");
         return "Hello " + txt + " !";
+  
     }
 
     /**
